@@ -1,7 +1,7 @@
 
 TODO !!
 
-1. ./asadmin create-custom-resource --restype com.sandvik.thread.pool.executor.ThreadPoolExecutor --factoryclass com.sandvik.thread.pool.executor.ThreadPoolExecutorFactory --description "A ThreadPoolExecutor backed by LinkedBlockingQueue" --property corePoolSize=6:maximumPoolSize=50:keepAliveTime=4:timeUnit=MINUTES:allowCoreThreadTimeOut=true:prestartAllCoreThreads=true concurrency/TP
+1. ./asadmin create-custom-resource --restype com.generic.thread.pool.executor.ThreadPoolExecutor --factoryclass com.generic.thread.pool.executor.ThreadPoolExecutorFactory --description "A ThreadPoolExecutor backed by LinkedBlockingQueue" --property corePoolSize=6:maximumPoolSize=50:keepAliveTime=4:timeUnit=MINUTES:allowCoreThreadTimeOut=true:prestartAllCoreThreads=true concurrency/TP
 2. Copy jar-file to $GLASSFISH_HOME/domains/domain1/lib/ directory! restart domain!
 3. Done.
 
