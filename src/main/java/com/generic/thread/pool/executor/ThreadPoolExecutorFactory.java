@@ -18,7 +18,7 @@ import javax.naming.Reference;
 
 /**
  *
- * @author ds38745
+ * @author Stefan Andersson
  */
 public class ThreadPoolExecutorFactory implements
         javax.naming.spi.ObjectFactory,

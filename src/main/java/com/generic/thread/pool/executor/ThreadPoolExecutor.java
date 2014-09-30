@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  *
- * @author ds38745
+ * @author Stefan Andersson
  */
 
 public class ThreadPoolExecutor extends java.util.concurrent.ThreadPoolExecutor {
