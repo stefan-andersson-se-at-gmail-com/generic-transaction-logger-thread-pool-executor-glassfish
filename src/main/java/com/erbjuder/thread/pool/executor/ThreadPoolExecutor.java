@@ -1,4 +1,4 @@
-package com.generic.thread.pool.executor;
+package com.erbjuder.thread.pool.executor;
 
 /*
  * To change this template, choose Tools | Templates
