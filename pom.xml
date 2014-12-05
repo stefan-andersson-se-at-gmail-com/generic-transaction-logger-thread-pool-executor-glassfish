@@ -6,7 +6,7 @@
     <groupId>com.generic.log.message.services</groupId>
     <artifactId>log_message_thread_pool_executor_glassfish</artifactId>
     <packaging>jar</packaging>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.1</version>
     <name>log_message_thread_pool_executor_glassfish</name>
 
      
@@ -25,11 +25,7 @@
     </distributionManagement>
 
 
-    <scm>
-        <connection>scm:git:https://github.com/user/project.git</connection>
-        <url>http://github.com/user/project</url>
-        <developerConnection>scm:git:https://github.com/user/project.git</developerConnection>
-    </scm>
+     
 
     <dependencies>
 
