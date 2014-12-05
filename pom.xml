@@ -19,7 +19,7 @@
     <scm>
         <url>https://github.com/stefan-andersson-se-at-gmail-com/generic-transaction-logger-thread-pool-executor-glassfish.git</url>
         <connection>scm:git:git://github.com/stefan-andersson-se-at-gmail-com/generic-transaction-logger-thread-pool-executor-glassfish.git</connection>
-        <developerConnection>stefan.andersson.se:d96SANd96SAN:git@github.com:stefan-andersson-se-at-gmail-com/generic-transaction-logger-thread-pool-executor-glassfish.git</developerConnection>
+        <developerConnection>scm:git:git@github.com:stefan-andersson-se-at-gmail-com/generic-transaction-logger-thread-pool-executor-glassfish.git</developerConnection>
     </scm>
 
     <!-- Nexus ( user name and PWD in maven -> settings.xml )-->
