@@ -4,8 +4,6 @@ package com.erbjuder.thread.pool.executor;
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
-
 import com.sun.appserv.server.LifecycleEvent;
 import com.sun.appserv.server.ServerLifecycleException;
 import java.util.Enumeration;
@@ -26,9 +24,17 @@ public class ThreadPoolExecutorFactory implements
         java.io.Serializable {
 
     @Override
-    public Object getObjectInstance(Object obj, javax.naming.Name name, Context nameCtx, Hashtable<?, ?> environment) throws Exception {
+    public Object getObjectInstance(Object obj,
+            javax.naming.Name name,
+            Context nameCtx,
+            Hashtable<?, ?> environment) throws Exception {
 
         ThreadPoolExecutor tp = ThreadPoolExecutor.getInstance();
+//        Logger.getLogger(ThreadPoolExecutorFactory.class.getName()).log(Level.SEVERE, "obj=" + obj);
+//        Logger.getLogger(ThreadPoolExecutorFactory.class.getName()).log(Level.SEVERE, "name=" + name);
+//        Logger.getLogger(ThreadPoolExecutorFactory.class.getName()).log(Level.SEVERE, "nameCtx=" + nameCtx);
+//        Logger.getLogger(ThreadPoolExecutorFactory.class.getName()).log(Level.SEVERE, "tp=" + tp);
+
         try {
             Reference reference = (Reference) obj;
             Enumeration<?> enumeration = reference.getAll();
@@ -65,12 +71,15 @@ public class ThreadPoolExecutorFactory implements
 
     @Override
     public void handleEvent(LifecycleEvent event) throws ServerLifecycleException {
-        if (event.getEventType() == LifecycleEvent.TERMINATION_EVENT) {
+        if (event.getEventType() == LifecycleEvent.TERMINATION_EVENT
+                || event.getEventType() == LifecycleEvent.SHUTDOWN_EVENT) {
             ThreadPoolExecutor tp = ThreadPoolExecutor.getInstance();
             System.out.println("About to purge and shutdown " + tp + ", active thread count: "
                     + tp.getActiveCount());
             tp.purge();
             tp.shutdown();
+
         }
     }
+
 }

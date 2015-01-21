@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
  * @author Stefan Andersson
  */
 
-public class ThreadPoolExecutor extends java.util.concurrent.ThreadPoolExecutor {
+public class ThreadPoolExecutor extends java.util.concurrent.ThreadPoolExecutor implements java.io.Serializable {
 
     static final int defaultCorePoolSize = 5;
     static final int defaultMaximumPoolSize = 10;

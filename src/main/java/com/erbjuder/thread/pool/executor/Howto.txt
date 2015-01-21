@@ -1,7 +1,10 @@
 
 TODO !!
 
-1. ./asadmin create-custom-resource --restype com.generic.thread.pool.executor.ThreadPoolExecutor --factoryclass com.generic.thread.pool.executor.ThreadPoolExecutorFactory --description "A ThreadPoolExecutor backed by LinkedBlockingQueue" --property corePoolSize=6:maximumPoolSize=50:keepAliveTime=4:timeUnit=MINUTES:allowCoreThreadTimeOut=true:prestartAllCoreThreads=true concurrency/TP
+1. ./asadmin create-custom-resource --restype com.erbjuder.thread.pool.executor.ThreadPoolExecutor --factoryclass com.erbjuder.thread.pool.executor.ThreadPoolExecutorFactory --description "A ThreadPoolExecutor backed by LinkedBlockingQueue" --property corePoolSize=6:maximumPoolSize=100:keepAliveTime=4:timeUnit=MINUTES:allowCoreThreadTimeOut=true:prestartAllCoreThreads=true concurrency/TP
 2. Copy jar-file to $GLASSFISH_HOME/domains/domain1/lib/ directory! restart domain!
 3. Done.
+
+Problem class loading?
+Read :https://blogs.oracle.com/chengfang/entry/how_to_parameterize_and_configure
 
